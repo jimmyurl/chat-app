@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// Usage in App.js:
+import React from 'react';
+import ChatInterface from './components/ChatInterface';
+import { ThemeProvider } from './contexts/ThemeContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen">
+        <header className="bg-white dark:bg-gray-800 shadow-sm">
+          <div className="container mx-auto p-4">
+            <h1 className="text-2xl font-bold">My Chat Application</h1>
+          </div>
+        </header>
+        
+        <main>
+          <ChatInterface />
+        </main>
+        
+        <footer className="bg-white dark:bg-gray-800 mt-8">
+          <div className="container mx-auto p-4 text-center text-gray-600 dark:text-gray-400">
+            © 2024 My Chat App
+          </div>
+        </footer>
+      </div>
+    </ThemeProvider>
   );
 }
 
