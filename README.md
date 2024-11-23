@@ -32,8 +32,8 @@ Before running this application, make sure you have the following installed:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/tanzania-assistant.git
-cd tanzania-assistant
+git clone https://github.com/jimmyurl/msaidizi.git
+cd msaidizi
 ```
 
 2. Install dependencies:
